@@ -1,0 +1,69 @@
+<resources>
+    <!-- 间距定义 -->
+    <dimen name="spacing_tiny">4dp</dimen>
+    <dimen name="spacing_small">8dp</dimen>
+    <dimen name="spacing_normal">16dp</dimen>
+    <dimen name="spacing_large">24dp</dimen>
+    <dimen name="spacing_extra_large">32dp</dimen>
+    
+    <!-- 文字大小 -->
+    <dimen name="text_size_caption">12sp</dimen>
+    <dimen name="text_size_body">14sp</dimen>
+    <dimen name="text_size_body_large">16sp</dimen>
+    <dimen name="text_size_title">18sp</dimen>
+    <dimen name="text_size_headline">20sp</dimen>
+    <dimen name="text_size_display_small">24sp</dimen>
+    <dimen name="text_size_display_medium">32sp</dimen>
+    <dimen name="text_size_display_large">48sp</dimen>
+    
+    <!-- 组件大小 -->
+    <dimen name="button_height_small">32dp</dimen>
+    <dimen name="button_height_normal">48dp</dimen>
+    <dimen name="button_height_large">56dp</dimen>
+    
+    <dimen name="card_corner_radius">12dp</dimen>
+    <dimen name="card_elevation">4dp</dimen>
+    
+    <dimen name="list_item_height">56dp</dimen>
+    <dimen name="toolbar_height">56dp</dimen>
+    
+    <!-- 边距 -->
+    <dimen name="margin_tiny">4dp</dimen>
+    <dimen name="margin_small">8dp</dimen>
+    <dimen name="margin_normal">16dp</dimen>
+    <dimen name="margin_large">24dp</dimen>
+    <dimen name="margin_extra_large">32dp</dimen>
+    
+    <!-- 内边距 -->
+    <dimen name="padding_tiny">4dp</dimen>
+    <dimen name="padding_small">8dp</dimen>
+    <dimen name="padding_normal">16dp</dimen>
+    <dimen name="padding_large">24dp</dimen>
+    
+    <!-- 闹钟特定尺寸 -->
+    <dimen name="alarm_time_text_size">48sp</dimen>
+    <dimen name="weather_info_text_size">20sp</dimen>
+    <dimen name="alarm_button_min_width">120dp</dimen>
+    <dimen name="alarm_button_min_height">48dp</dimen>
+    <dimen name="number_picker_width">80dp</dimen>
+    <dimen name="number_picker_height">120dp</dimen>
+    
+    <!-- 卡片间距 -->
+    <dimen name="card_margin">8dp</dimen>
+    <dimen name="card_padding">16dp</dimen>
+    
+    <!-- 边框宽度 -->
+    <dimen name="border_width_small">1dp</dimen>
+    <dimen name="border_width_normal">2dp</dimen>
+    
+    <!-- 图标大小 -->
+    <dimen name="icon_size_tiny">16dp</dimen>
+    <dimen name="icon_size_small">24dp</dimen>
+    <dimen name="icon_size_normal">32dp</dimen>
+    <dimen name="icon_size_large">48dp</dimen>
+    
+    <!-- 进度条 -->
+    <dimen name="progress_bar_size">32dp</dimen>
+    <dimen name="progress_bar_thickness">4dp</dimen>
+    
+</resources>

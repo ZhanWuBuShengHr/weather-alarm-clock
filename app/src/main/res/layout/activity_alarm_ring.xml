@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@drawable/alarm_background_gradient"
+    android:padding="24dp"
+    tools:context=".ui.AlarmRingActivity">
+
+    <!-- 闹钟图标 -->
+    <ImageView
+        android:id="@+id/iv_alarm_icon"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginBottom="32dp"
+        android:src="@android:drawable/ic_lock_idle_alarm"
+        android:tint="@android:color/white" />
+
+    <!-- 问候语 -->
+    <TextView
+        android:id="@+id/tv_greeting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="早上好！"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/white"
+        android:layout_marginBottom="16dp" />
+
+    <!-- 当前时间 -->
+    <TextView
+        android:id="@+id/tv_current_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="07:00"
+        android:textSize="48sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/white"
+        android:layout_marginBottom="24dp" />
+
+    <!-- 天气信息卡片 -->
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        app:cardCornerRadius="12dp"
+        app:cardElevation="8dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <TextView
+                android:id="@+id/tv_weather_location"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="正在获取天气信息..."
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="8dp" />
+
+            <TextView
+                android:id="@+id/tv_weather_description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="请稍等"
+                android:textSize="14sp"
+                android:layout_marginBottom="4dp" />
+
+            <TextView
+                android:id="@+id/tv_weather_temperature"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textSize="12sp"
+                android:textColor="@android:color/darker_gray" />
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <!-- 语音播报状态 -->
+    <TextView
+        android:id="@+id/tv_speech_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="正在播报天气信息..."
+        android:textSize="14sp"
+        android:textColor="@android:color/white"
+        android:layout_marginBottom="32dp"
+        android:visibility="gone" />
+
+    <!-- 控制按钮 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginBottom="16dp">
+
+        <!-- 贪睡按钮 -->
+        <Button
+            android:id="@+id/btn_snooze"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="贪睡5分钟"
+            android:layout_marginEnd="8dp"
+            android:background="@android:color/white"
+            android:textColor="@color/colorPrimary"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton" />
+
+        <!-- 停止按钮 -->
+        <Button
+            android:id="@+id/btn_stop"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="停止闹钟"
+            android:layout_marginStart="8dp"
+            android:background="@android:color/white"
+            android:textColor="@color/colorPrimary"
+            style="@style/Widget.MaterialComponents.Button" />
+
+    </LinearLayout>
+
+    <!-- 语音播报控制 -->
+    <Button
+        android:id="@+id/btn_replay_speech"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="重新播报"
+        android:layout_marginBottom="16dp"
+        android:background="@android:color/transparent"
+        android:textColor="@android:color/white"
+        android:visibility="gone" />
+
+    <!-- 加载指示器 -->
+    <ProgressBar
+        android:id="@+id/progress_loading_weather"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:visibility="gone" />
+
+    <!-- 错误信息 -->
+    <TextView
+        android:id="@+id/tv_error_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textColor="@android:color/holo_red_dark"
+        android:textSize="12sp"
+        android:gravity="center"
+        android:visibility="gone" />
+
+</LinearLayout>
