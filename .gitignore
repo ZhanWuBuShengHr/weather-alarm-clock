@@ -1,0 +1,127 @@
+# Gradle
+.gradle/
+build/
+local.properties
+
+# Android Studio
+.idea/
+.DS_Store
+*.iml
+.externalNativeBuild
+.cxx/
+
+# APK files
+*.apk
+*.ap_
+*.aab
+
+# Java
+*.class
+*.log
+*.hprof
+
+# Kotlin
+*.class
+*.jar
+*.war
+*.ear
+*.zip
+*.tar.gz
+*.rar
+
+# Proguard
+proguard/
+
+# Log Files
+*.log
+logs/
+
+# Temporary files
+*.tmp
+*.swp
+*.bak
+*~.nib
+
+# Eclipse project files
+.metadata
+bin/
+tmp/
+local.properties
+.settings/
+.loadpath
+.recommenders
+
+# Android Studio Navigation editor temp files
+.navigation/
+
+# Android Studio captures folder
+captures/
+
+# IntelliJ
+*.iml
+.idea/workspace.xml
+.idea/tasks.xml
+.idea/gradle.xml
+.idea/dictionaries
+.idea/libraries
+.idea/caches
+.idea/modules.xml
+.idea/navEditor.xml
+
+# Keystore files
+*.jks
+*.keystore
+
+# External native build folder generated in Android Studio 2.2 and later
+.externalNativeBuild
+.cxx/
+
+# Google Services (e.g. APIs or Firebase)
+# google-services.json
+
+# fastlane
+fastlane/report.xml
+fastlane/Preview.html
+fastlane/screenshots
+fastlane/test_output
+fastlane/readme.md
+
+# Crashlytics plugin (for Android Studio and IntelliJ)
+com_crashlytics_export_strings.xml
+crashlytics.properties
+crashlytics-build.properties
+fabric.properties
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# IDE files
+*.ipr
+*.iws
+.project
+.classpath
+
+# Runtime data
+*.pid
+*.seed
+*.pid.lock
+
+# Backup files
+*.backup
+*.bak
+*.tmp
+
+# Test files
+test-results/
+coverage/
+
+# Environment files
+.env
+.env.local
+.env.production
